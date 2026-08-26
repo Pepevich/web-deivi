@@ -116,8 +116,8 @@ export const SEO = {
   // Dominio final del sitio, sin barra al final (ej: https://deivi.com.ar).
   // Se usa para el Open Graph `url` y `metadataBase`; mientras sea un
   // placeholder, esos campos se omiten automáticamente (ver SEO.jsx).
-  siteUrl: "[SITE_URL_DEIVI]",
-  ogImage: "[OG_IMAGE_DEIVI]", // ruta o URL de la imagen para Open Graph
+  siteUrl: "https://web-deivi.vercel.app",
+  ogImage: "/images/que-hacemos/momentos-deivi.jpg", // ruta o URL de la imagen para Open Graph
   // El favicon real se sirve por convención de Next.js desde
   // src/app/icon.svg (placeholder de marca ya incluido ahí). Este campo
   // queda como referencia por si se reemplaza por un archivo .ico/.png.
