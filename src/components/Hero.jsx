@@ -72,10 +72,10 @@ export default function Hero() {
           {/* Mobile: ícono + "DE.IVI" en línea, alineados a la izquierda */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute left-5 top-6 z-[5] flex items-center gap-3 sm:hidden"
+            className="pointer-events-none absolute left-5 top-12 z-[5] flex items-end gap-3 sm:hidden"
           >
             <Image src="/images/logo-icon.png" alt="" width={1322} height={1325} priority className="h-40 w-auto opacity-90" />
-            <Image src="/images/logo-wordmark.png" alt="" width={1154} height={500} priority className="h-14 w-auto opacity-90" />
+            <Image src="/images/logo-wordmark.png" alt="" width={1154} height={500} priority className="h-[47.6px] w-auto opacity-90" />
           </div>
 
           {/* Desktop: isotipo completo (ícono + "DE.IVI" apilados), centrado a la derecha */}
