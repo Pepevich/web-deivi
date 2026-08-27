@@ -68,19 +68,31 @@ export default function Hero() {
         centrado en toda la altura (eso lo haría chocar con el título).
       */}
       {!isPlaceholderValue(HERO.logo) ? (
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute right-5 top-6 z-[5] flex sm:inset-y-0 sm:right-0 sm:w-[45%] sm:items-center sm:justify-center"
-        >
-          <Image
-            src={HERO.logo}
-            alt=""
-            width={1728}
-            height={2115}
-            priority
-            className="h-64 w-auto opacity-90 sm:h-[65%]"
-          />
-        </div>
+        <>
+          {/* Mobile: ícono + "DE.IVI" en línea, alineados a la izquierda */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute left-5 top-6 z-[5] flex items-center gap-3 sm:hidden"
+          >
+            <Image src="/images/logo-icon.png" alt="" width={1322} height={1325} priority className="h-40 w-auto opacity-90" />
+            <Image src="/images/logo-wordmark.png" alt="" width={1154} height={500} priority className="h-14 w-auto opacity-90" />
+          </div>
+
+          {/* Desktop: isotipo completo (ícono + "DE.IVI" apilados), centrado a la derecha */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-y-0 right-0 z-[5] hidden w-[45%] items-center justify-center sm:flex"
+          >
+            <Image
+              src={HERO.logo}
+              alt=""
+              width={1728}
+              height={2115}
+              priority
+              className="h-[65%] w-auto opacity-90"
+            />
+          </div>
+        </>
       ) : null}
 
       {/*
