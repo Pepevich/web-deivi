@@ -78,7 +78,7 @@ export default function Hero() {
             width={1728}
             height={2115}
             priority
-            className="h-16 w-auto opacity-90 sm:h-[65%]"
+            className="h-64 w-auto opacity-90 sm:h-[65%]"
           />
         </div>
       ) : null}
