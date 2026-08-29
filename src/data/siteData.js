@@ -190,7 +190,7 @@ export const WHAT_WE_DO = [
   {
     id: "Momentos-DeIvi",
     title: "Momentos DeIvi",
-    description: "Regalos que se convierten en exoeriencias.",
+    description: "Regalos que se convierten en experiencias.",
     image: "/images/que-hacemos/momentos-deivi.jpg",
     imageAlt: "Cajas y productos DeIvi",
     ctaLabel: "VER PROPUESTA",
