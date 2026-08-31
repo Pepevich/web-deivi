@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 3000
+    },
+    {
+      "name": "deivi-costos-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "deivi-costos", "run", "dev", "--", "-p", "3001"],
+      "port": 3001
     }
   ]
 }
