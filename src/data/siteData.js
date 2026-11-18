@@ -40,8 +40,8 @@ export function isPlaceholderValue(value) {
 // 1. CONFIGURACIÓN CENTRALIZADA DE LA EMPRESA (§20, §13)
 // -----------------------------------------------------------------------------
 export const COMPANY = {
-  name: "DeIvi",
-  fullName: "DeIvi Pastelería & Catering",
+  name: "De.ivi",
+  fullName: "De.ivi Pastelería & Catering",
   founder: "Ivana",
   concept: "Soluciones gastronómicas para empresas, instituciones y eventos.",
 
@@ -110,14 +110,14 @@ export const SOCIAL_LINKS = [
 // 4. SEO BÁSICO (§22)
 // -----------------------------------------------------------------------------
 export const SEO = {
-  title: "DeIvi Pastelería & Catering | Eventos 360 para empresas",
+  title: "De.ivi | Pausas, encuentros y regalos para empresas",
   description:
-    "Catering, pastelería artesanal, coffee breaks, eventos y presentes empresariales. Descubrí las propuestas de DeIvi.",
+    "Desayunos y meriendas de trabajo, catas de café y regalos empresariales con pastelería artesanal. Escobar, Pilar y zona norte.",
   // Dominio final del sitio, sin barra al final (ej: https://deivi.com.ar).
   // Se usa para el Open Graph `url` y `metadataBase`; mientras sea un
   // placeholder, esos campos se omiten automáticamente (ver SEO.jsx).
   siteUrl: "https://deivi.com.ar",
-  ogImage: "/images/que-hacemos/momentos-deivi.jpg", // ruta o URL de la imagen para Open Graph
+  ogImage: "/images/que-hacemos/encuentros-con-experiencia.jpg", // ruta o URL de la imagen para Open Graph
   // El favicon real se sirve por convención de Next.js desde
   // src/app/icon.svg (placeholder de marca ya incluido ahí). Este campo
   // queda como referencia por si se reemplaza por un archivo .ico/.png.
@@ -139,12 +139,12 @@ export const ANALYTICS = {
 // 6. HERO (primera pantalla)
 // -----------------------------------------------------------------------------
 export const HERO = {
-  eyebrow: "DeIvi Catering ",
-  title: "Eventos 360 para Empresas",
+  eyebrow: "De.ivi · Pastelería & Catering",
+  title: "Encuentros que tu equipo recuerda",
   subtitle:
-    "Propuestas corporativas pensadas para empresas",
+    "Desayunos, meriendas, catas de café y regalos empresariales con pastelería artesanal. Nos ocupamos de todo para que ustedes solo lo disfruten.",
   image: "[IMAGEN_HERO_DEIVI]", // imagen gastronómica de alta calidad (WebP)
-  imageAlt: "Producción gastronómica artesanal DeIvi",
+  imageAlt: "Pastelería artesanal De.ivi",
   logo: "/images/logo-mark.png", // isotipo sin el texto "Pastelería" (recorte de /images/logo.png)
   ctaPrimary: {
     label: "VER PROPUESTAS",
@@ -152,7 +152,7 @@ export const HERO = {
     target: "que-hacemos", // ancla a la sección "Qué hacemos"
   },
   ctaWhatsapp: {
-    label: "HABLAR CON DEIVI",
+    label: "HABLAR CON DE.IVI",
     action: "whatsapp",
     contextKey: "hero",
   },
@@ -163,47 +163,47 @@ export const HERO = {
 // -----------------------------------------------------------------------------
 export const WHAT_WE_DO_INTRO = {
   eyebrow: "Qué hacemos",
-  title: "Como Crear Momentos con Deivi",
+  title: "Cómo creamos momentos en tu empresa",
 };
 
 export const WHAT_WE_DO = [
   {
     id: "catering-corporativo",
-    title: "Catering corporativo",
+    title: "Pausas de trabajo",
     description:
-      "Coffee breaks, reuniones, capacitaciones, presentaciones y encuentros empresariales.",
-    image: "/images/que-hacemos/catering-corporativo.jpg",
-    imageAlt: "Catering corporativo DeIvi",
-    ctaLabel: "VER PROPUESTA",
+      "Desayunos, meriendas y coffee breaks para reuniones, capacitaciones y visitas. Una vez o todos los meses.",
+    image: "/images/que-hacemos/pausas-de-trabajo.jpg",
+    imageAlt: "Pausa de trabajo con pastelería De.ivi",
+    ctaLabel: "PEDIR PROPUESTA",
     contextKey: "catering-corporativo",
   },
   {
     id: "eventos",
-    title: "Eventos",
+    title: "Encuentros con experiencia",
     description:
-      "Propuestas gastronómicas para eventos sociales, institucionales y corporativos.",
-    image: "/images/que-hacemos/eventos.jpg",
-    imageAlt: "Eventos DeIvi",
-    ctaLabel: "VER PROPUESTA",
+      "Catering más una dinámica a medida, como una charla y cata de café de especialidad, para lanzamientos y eventos con clientes.",
+    image: "/images/que-hacemos/encuentros-con-experiencia.jpg",
+    imageAlt: "Encuentro con cata de café De.ivi",
+    ctaLabel: "PEDIR PROPUESTA",
     contextKey: "eventos",
   },
   {
     id: "Momentos-DeIvi",
-    title: "Soluciones para tus mejores momentos",
-    description: "Regalos que se convierten en experiencias.",
-    image: "/images/que-hacemos/momentos-deivi.jpg",
-    imageAlt: "Cajas y productos DeIvi",
-    ctaLabel: "VER PROPUESTA",
+    title: "Pastelería para celebrar",
+    description: "Boxes de tortas, budines, cookies y macarons para cumpleaños del equipo y fechas especiales.",
+    image: "/images/que-hacemos/pasteleria-para-celebrar.jpg",
+    imageAlt: "Box de pastelería De.ivi",
+    ctaLabel: "PEDIR PROPUESTA",
     contextKey: "pasteleria",
   },
   {
     id: "presentes-empresariales",
-    title: "Presentes empresariales",
+    title: "Regalos empresariales",
     description:
-      "Regalos Corporativos para Celebrar y Agradecer.",
-    image: "/images/que-hacemos/presentes-empresariales.jpg",
-    imageAlt: "Presentes empresariales DeIvi",
-    ctaLabel: "VER PROPUESTA",
+      "Tres kits con café de especialidad y pastelería, con el logo de tu empresa desde 10 unidades.",
+    image: "/images/que-hacemos/regalos-empresariales.jpg",
+    imageAlt: "Kit de regalo empresarial De.ivi",
+    ctaLabel: "PEDIR PROPUESTA",
     contextKey: "presentes-empresariales",
   },
 ];
@@ -270,33 +270,33 @@ export const SERVICES = [
 // cuanto se cargue una imagen real en `image`, esa pasa a usarse en su lugar
 // (ver Differentiators.jsx).
 export const DIFFERENTIATORS = {
-  title: "¿Por qué elegir DeIvi?",
+  title: "¿Por qué elegir De.ivi?",
   items: [
     {
       id: "artesanal",
-      title: "Artesanal",
-      description: "Productos elaborados con cuidado y atención al detalle.",
+      title: "Artesanal, con método",
+      description: "Cada receta está pesada, escrita y costeada: sale igual cada vez.",
       icon: "hand",
       image: "/images/diferenciales/artesanal.png",
     },
     {
       id: "personalizado",
-      title: "Personalizado",
-      description: "Propuestas adaptadas a cada empresa y ocasión.",
+      title: "A medida",
+      description: "Diseñamos el encuentro, no solo el menú, según tu gente y tu objetivo.",
       icon: "sliders",
       image: "/images/diferenciales/personalizado.png",
     },
     {
       id: "profesional",
-      title: "Profesional",
-      description: "Organización y presentación pensadas para el ámbito corporativo.",
+      title: "Proveedora formal",
+      description: "Taller habilitado, factura y presupuesto cerrado según la cantidad de personas.",
       icon: "briefcase",
       image: "/images/diferenciales/profesional.png",
     },
     {
       id: "calidad",
-      title: "Calidad",
-      description: "Ingredientes, elaboración y presentación cuidadosamente seleccionados.",
+      title: "Llega impecable",
+      description: "Packaging pensado para viajar, con tu logo si lo pedís.",
       icon: "award",
       image: "/images/diferenciales/calidad.png",
     },
@@ -307,8 +307,8 @@ export const DIFFERENTIATORS = {
 // 10. LLAMADA A LA ACCIÓN FINAL (§12)
 // -----------------------------------------------------------------------------
 export const FINAL_CTA = {
-  title: "¿Estás organizando un evento?",
-  text: "Contanos qué necesitás y armamos una propuesta gastronómica para tu empresa.",
+  title: "¿Tenés una reunión, un lanzamiento o regalos de fin de año?",
+  text: "Contanos para cuántas personas y para cuándo, y te armamos una propuesta con precio cerrado.",
   buttonLabel: "QUIERO UNA PROPUESTA",
   contextKey: "cta-final",
 };
@@ -321,7 +321,7 @@ export const FINAL_CTA = {
 // pueda renderizar sin querer un enlace roto.
 export const CONTACT = {
   title: COMPANY.fullName,
-  buttonLabel: "CONTACTAR A DEIVI",
+  buttonLabel: "CONTACTAR A DE.IVI",
   contextKey: "contacto",
   channels: [
     { id: "whatsapp", label: COMPANY.contact.whatsappDisplay, contextKey: "contacto" },
@@ -353,17 +353,17 @@ export const QR_FOOTER_MESSAGE = "¿Llegaste desde nuestro QR? Gracias por visit
 // CONTACT resuelve acá su mensaje correspondiente.
 
 const WHATSAPP_CONTEXT_MESSAGES = {
-  hero: "Hola DeIvi, conocí sus propuestas y quisiera recibir información para mi empresa.",
-  floating: "Hola DeIvi, quisiera hacer una consulta.",
-  "cta-final": "Hola DeIvi, conocí sus propuestas y quisiera recibir información para mi empresa.",
-  contacto: "Hola DeIvi, quisiera ponerme en contacto para conocer más sobre sus propuestas.",
+  hero: "Hola De.ivi, conocí sus propuestas y quisiera recibir información para mi empresa.",
+  floating: "Hola De.ivi, quisiera hacer una consulta.",
+  "cta-final": "Hola De.ivi, conocí sus propuestas y quisiera recibir información para mi empresa.",
+  contacto: "Hola De.ivi, quisiera ponerme en contacto para conocer más sobre sus propuestas.",
 
   // Contextos de "Qué hacemos" / Servicios (§14 — ejemplos provistos)
-  "catering-corporativo": "Hola DeIvi, quisiera consultar por una propuesta de catering para mi empresa.",
-  eventos: "Hola DeIvi, quisiera recibir una propuesta para un evento.",
-  pasteleria: "Hola DeIvi, quisiera conocer más sobre sus productos de pastelería artesanal.",
-  "presentes-empresariales": "Hola DeIvi, quisiera conocer las opciones de presentes empresariales.",
-  "propuestas-especiales": "Hola DeIvi, quisiera conocer sus propuestas gastronómicas personalizadas.",
+  "catering-corporativo": "Hola De.ivi, quisiera consultar por una propuesta de catering para mi empresa.",
+  eventos: "Hola De.ivi, quisiera recibir una propuesta para un encuentro con mi equipo o mis clientes.",
+  pasteleria: "Hola De.ivi, quisiera consultar por un box de pastelería para mi empresa.",
+  "presentes-empresariales": "Hola De.ivi, quisiera conocer los kits de regalos empresariales.",
+  "propuestas-especiales": "Hola De.ivi, quisiera conocer sus propuestas gastronómicas personalizadas.",
 };
 
 /**
