@@ -4,7 +4,7 @@
  * GiftKits.jsx — detalle de "Regalos empresariales"
  * =============================================================================
  * Vive dentro de la tarjeta "Regalos empresariales" de Qué hacemos: el título
- * de la tarjeta (y el link "Ver los 3 kits") abren un panel con los 3 kits,
+ * de la tarjeta abre un panel con los 3 kits,
  * el descuento y las condiciones. Todo el contenido sale de GIFT_KITS en
  * siteData.js.
  *
@@ -28,7 +28,7 @@ function isSeasonalActive(until) {
   return new Date() <= new Date(`${until}T23:59:59`);
 }
 
-export default function GiftKits({ title, description, linkLabel }) {
+export default function GiftKits({ title, description }) {
   const [open, setOpen] = useState(false);
   const [showSeasonal, setShowSeasonal] = useState(false);
   const dialogRef = useRef(null);
@@ -91,17 +91,6 @@ export default function GiftKits({ title, description, linkLabel }) {
         </button>
       </h3>
       {description ? <p className="mt-2 text-sm leading-relaxed text-grafito/70">{description}</p> : null}
-
-      {linkLabel ? (
-        <button
-          type="button"
-          onClick={openPanel}
-          className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-naranja hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-naranja focus-visible:ring-offset-2"
-        >
-          {linkLabel}
-          <ArrowRight className="h-4 w-4" aria-hidden="true" />
-        </button>
-      ) : null}
 
       <dialog
         ref={dialogRef}

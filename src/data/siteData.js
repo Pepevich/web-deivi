@@ -207,7 +207,6 @@ export const WHAT_WE_DO = [
     contextKey: "presentes-empresariales",
     // Al tocar el título se abre el panel con los 3 kits (GIFT_KITS, abajo).
     detail: "regalos",
-    detailLinkLabel: "Ver los 3 kits",
   },
 ];
 

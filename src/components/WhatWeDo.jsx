@@ -30,7 +30,7 @@ export default function WhatWeDo() {
             <PlaceholderImage image={item.image} alt={item.imageAlt} className="aspect-[4/3]" />
             <div className="p-6">
               {item.detail === "regalos" ? (
-                <GiftKits title={item.title} description={item.description} linkLabel={item.detailLinkLabel} />
+                <GiftKits title={item.title} description={item.description} />
               ) : (
                 <>
                   <h3 className="font-display text-lg font-semibold text-grafito">{item.title}</h3>
