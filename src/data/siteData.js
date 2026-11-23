@@ -200,7 +200,7 @@ export const WHAT_WE_DO = [
     id: "presentes-empresariales",
     title: "Regalos empresariales",
     description:
-      "Tres kits con café de especialidad y pastelería, con el logo de tu empresa desde 10 unidades.",
+      "Para agradecer, dar la bienvenida o celebrar el fin de año, con el sello de tu empresa.",
     image: "/images/que-hacemos/regalos-empresariales.jpg",
     imageAlt: "Kit de regalo empresarial De.ivi",
     ctaLabel: "PEDIR PROPUESTA",
