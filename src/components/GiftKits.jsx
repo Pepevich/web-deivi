@@ -15,7 +15,7 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { X, ChevronDown, ArrowRight, Check } from "lucide-react";
+import { X, ChevronDown, ArrowRight, Check, Download } from "lucide-react";
 import { GIFT_KITS } from "@/data/siteData";
 import PlaceholderImage from "./PlaceholderImage";
 import WhatsAppButton from "./WhatsAppButton";
@@ -250,7 +250,24 @@ export default function GiftKits({ title, description }) {
             {/* Cierre */}
             <div className="mt-10 flex flex-col items-center gap-4 text-center">
               <p className="max-w-md text-sm text-grafito/70">{GIFT_KITS.finalCta.text}</p>
-              <WhatsAppButton contextKey={GIFT_KITS.finalCta.contextKey} label={GIFT_KITS.finalCta.label} size="lg" />
+              <div className="flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row">
+                <WhatsAppButton
+                  contextKey={GIFT_KITS.finalCta.contextKey}
+                  label={GIFT_KITS.finalCta.label}
+                  size="lg"
+                  fullWidthOnMobile
+                />
+                {GIFT_KITS.pdf?.url ? (
+                  <a
+                    href={GIFT_KITS.pdf.url}
+                    download={GIFT_KITS.pdf.fileName}
+                    className="inline-flex h-14 w-full items-center justify-center gap-2 rounded-full border-2 border-grafito px-7 text-base font-medium text-grafito transition-colors duration-200 hover:bg-grafito hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-grafito focus-visible:ring-offset-2 sm:w-auto"
+                  >
+                    <Download className="h-5 w-5 shrink-0" aria-hidden="true" />
+                    {GIFT_KITS.pdf.label}
+                  </a>
+                ) : null}
+              </div>
             </div>
           </div>
         </div>

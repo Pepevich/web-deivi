@@ -332,6 +332,13 @@ export const GIFT_KITS = {
     label: "ARMAR MIS REGALOS",
     contextKey: "presentes-empresariales",
   },
+  // PDF descargable con la propuesta completa (public/docs/). Para la próxima
+  // temporada, reemplazar el archivo y actualizar estos datos.
+  pdf: {
+    label: "DESCARGAR PROPUESTA (PDF)",
+    url: "/docs/deivi-regalos-empresariales-2026.pdf",
+    fileName: "De.ivi - Regalos empresariales 2026.pdf",
+  },
   closeLabel: "Cerrar",
 };
 
