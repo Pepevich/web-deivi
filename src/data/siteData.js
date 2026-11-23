@@ -172,7 +172,7 @@ export const WHAT_WE_DO = [
     title: "Pausas de trabajo",
     description:
       "Desayunos, meriendas y coffee breaks para reuniones, capacitaciones y visitas. Una vez o todos los meses.",
-    image: "/images/que-hacemos/pausas-de-trabajo.jpg",
+    image: "/images/que-hacemos/pausa-cookies-macarons.jpg",
     imageAlt: "Pausa de trabajo con pastelería De.ivi",
     ctaLabel: "PEDIR PROPUESTA",
     contextKey: "catering-corporativo",
@@ -191,7 +191,7 @@ export const WHAT_WE_DO = [
     id: "Momentos-DeIvi",
     title: "Pastelería para celebrar",
     description: "Boxes de tortas, budines, cookies y macarons para cumpleaños del equipo y fechas especiales.",
-    image: "/images/que-hacemos/pasteleria-para-celebrar.jpg",
+    image: "/images/que-hacemos/pasteleria-variedad.jpg",
     imageAlt: "Box de pastelería De.ivi",
     ctaLabel: "PEDIR PROPUESTA",
     contextKey: "pasteleria",
