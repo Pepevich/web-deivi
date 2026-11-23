@@ -13,7 +13,12 @@
 import Image from "next/image";
 import { isPlaceholderValue } from "@/data/siteData";
 
-export default function PlaceholderImage({ image, alt, className = "" }) {
+export default function PlaceholderImage({
+  image,
+  alt,
+  className = "",
+  sizes = "(max-width: 768px) 100vw, 33vw",
+}) {
   const isPlaceholder = isPlaceholderValue(image);
 
   if (isPlaceholder) {
@@ -38,7 +43,7 @@ export default function PlaceholderImage({ image, alt, className = "" }) {
         src={image}
         alt={alt}
         fill
-        sizes="(max-width: 768px) 100vw, 33vw"
+        sizes={sizes}
         className="object-cover"
       />
     </div>

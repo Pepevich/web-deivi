@@ -205,8 +205,136 @@ export const WHAT_WE_DO = [
     imageAlt: "Kit de regalo empresarial De.ivi",
     ctaLabel: "PEDIR PROPUESTA",
     contextKey: "presentes-empresariales",
+    // Al tocar el título se abre el panel con los 3 kits (GIFT_KITS, abajo).
+    detail: "regalos",
+    detailLinkLabel: "Ver los 3 kits",
   },
 ];
+
+// -----------------------------------------------------------------------------
+// 7b. REGALOS EMPRESARIALES — detalle de los 3 kits
+// -----------------------------------------------------------------------------
+// Se abre como panel desde la tarjeta "Regalos empresariales" de Qué hacemos
+// (ver GiftKits.jsx). Fuente: "De.ivi Regalos empresariales 2026" (PDF).
+// Los precios NO se publican: se consultan por WhatsApp.
+export const GIFT_KITS = {
+  // Ancla para compartir el link directo al panel: deivi.com.ar/#regalos-empresariales
+  hash: "#regalos-empresariales",
+  eyebrow: "Regalos empresariales",
+  title: "Tres kits para agradecer, dar la bienvenida y celebrar",
+  intro:
+    "Elaborados en nuestro taller, con recetas propias y productos seleccionados, listos para que tu empresa agasaje a sus equipos y clientes.",
+
+  benefits: [
+    { id: "elaboracion", title: "Elaboración propia", text: "Pastelería artesanal con recetas estandarizadas." },
+    { id: "marca", title: "Tu marca en cada caja", text: "Logo en la tapa y tarjeta, desde 10 unidades." },
+    { id: "entrega", title: "Entrega coordinada", text: "En el lugar y horario que acordemos." },
+  ],
+
+  // Aviso de temporada: se oculta solo después de `until` (fecha inclusive).
+  // Para la próxima temporada, cambiar el texto y la fecha.
+  seasonalNotice: {
+    text: "Pedidos de fin de año hasta el 5 de diciembre.",
+    until: "2026-12-05",
+  },
+
+  kits: [
+    {
+      id: "bienvenida",
+      number: "01",
+      name: "Bienvenida",
+      tagline: "Un buen comienzo merece un buen café.",
+      accent: "#2f6b47",
+      image: "/images/regalos/kit-bienvenida.jpg",
+      imageAlt: "Kit Bienvenida De.ivi: cookies, vaso térmico, drip bag y café de especialidad",
+      idealFor: "Dar la bienvenida a nuevos integrantes del equipo, nuevos clientes y el inicio de un proyecto.",
+      items: [
+        "2 cookies grandes (60 g c/u)",
+        "Vaso térmico doble fondo",
+        "Drip bag para preparar café",
+        "Café de especialidad (50 g)",
+      ],
+      contextKey: "kit-bienvenida",
+    },
+    {
+      id: "pausa",
+      number: "02",
+      name: "Pausa",
+      tagline: "La pausa perfecta en la oficina.",
+      accent: "#f59400",
+      image: "/images/regalos/kit-pausa.jpg",
+      imageAlt: "Kit Pausa De.ivi: macarons, vaso térmico, drip bags y café de especialidad",
+      idealFor: "Agradecer a equipos y clientes, fin de año y aniversarios.",
+      items: [
+        "7 macarons",
+        "Vaso térmico doble fondo",
+        "2 drip bags para preparar café",
+        "2 cafés de especialidad (50 g c/u)",
+      ],
+      contextKey: "kit-pausa",
+    },
+    {
+      id: "coleccion",
+      number: "03",
+      name: "Colección",
+      tagline: "Una experiencia gourmet para celebrar.",
+      accent: "#5b2a86",
+      image: "/images/regalos/kit-coleccion.jpg",
+      imageAlt: "Kit Colección De.ivi: vino, conserva patagónica, macarons, medallas de chocolate y café",
+      idealFor: "Clientes clave, autoridades y cierres de año.",
+      items: [
+        "Vino a elección del cliente",
+        "Conserva patagónica de mar",
+        "7 macarons",
+        "3 medallas de chocolate con nuestro sello",
+        "3 cafés de especialidad molidos (50 g c/u)",
+      ],
+      // Leyenda obligatoria por incluir bebida alcohólica (Ley 24.788).
+      legalNote: "Beber con moderación. Prohibida su venta a menores de 18 años.",
+      contextKey: "kit-coleccion",
+    },
+  ],
+
+  kitCtaLabel: "CONSULTAR ESTE KIT",
+  priceNote: "Precios por WhatsApp, según cantidad y personalización.",
+
+  discount: {
+    title: "10% de descuento",
+    text: "comprando 10 o más unidades del mismo kit.",
+    note: "Incluye la personalización con tu logo. El descuento no aplica al vino del Kit Colección.",
+  },
+
+  detailsToggleLabel: "Ver condiciones y personalización",
+  personalization: {
+    title: "Personalización",
+    columns: { option: "Opción", from: "Desde", cost: "Costo" },
+    rows: [
+      { option: "Logo de la empresa en la tapa (vinilo)", from: "10 unidades", cost: "Incluido" },
+      { option: "Tarjeta con logo y mensaje de la empresa", from: "10 unidades", cost: "Incluido" },
+      { option: "Macarons en los colores de la marca", from: "20 unidades", cost: "A consultar" },
+    ],
+    note: "Las medallas de chocolate llevan siempre el sello De.ivi.",
+  },
+  conditions: {
+    title: "Condiciones comerciales",
+    items: [
+      "Cajas personalizadas: 10 días de anticipación.",
+      "Seña del 50% para confirmar el pedido.",
+      "Saldo antes de la entrega.",
+      "Entrega coordinada en el lugar acordado.",
+      "Entregas en varias direcciones: a consultar.",
+      "Conservar en lugar fresco y seco.",
+      "Productos sin conservantes artificiales.",
+    ],
+  },
+
+  finalCta: {
+    text: "¿No sabés cuál elegir? Contanos para quién es y cuántas unidades necesitás.",
+    label: "ARMAR MIS REGALOS",
+    contextKey: "presentes-empresariales",
+  },
+  closeLabel: "Cerrar",
+};
 
 // -----------------------------------------------------------------------------
 // 8. "NUESTROS SERVICIOS" — 9 ítems (§6)
@@ -364,6 +492,11 @@ const WHATSAPP_CONTEXT_MESSAGES = {
   pasteleria: "Hola De.ivi, quisiera consultar por un box de pastelería para mi empresa.",
   "presentes-empresariales": "Hola De.ivi, quisiera conocer los kits de regalos empresariales.",
   "propuestas-especiales": "Hola De.ivi, quisiera conocer sus propuestas gastronómicas personalizadas.",
+
+  // Kits de regalos empresariales (GIFT_KITS)
+  "kit-bienvenida": "Hola De.ivi, quisiera consultar por el Kit Bienvenida para mi empresa.",
+  "kit-pausa": "Hola De.ivi, quisiera consultar por el Kit Pausa para mi empresa.",
+  "kit-coleccion": "Hola De.ivi, quisiera consultar por el Kit Colección para mi empresa.",
 };
 
 /**
@@ -402,6 +535,7 @@ const siteData = {
   HERO,
   WHAT_WE_DO_INTRO,
   WHAT_WE_DO,
+  GIFT_KITS,
   SERVICES_INTRO,
   SERVICES,
   DIFFERENTIATORS,

@@ -9,6 +9,7 @@
 import { WHAT_WE_DO_INTRO, WHAT_WE_DO } from "@/data/siteData";
 import PlaceholderImage from "./PlaceholderImage";
 import WhatsAppButton from "./WhatsAppButton";
+import GiftKits from "./GiftKits";
 
 export default function WhatWeDo() {
   return (
@@ -28,8 +29,14 @@ export default function WhatWeDo() {
           >
             <PlaceholderImage image={item.image} alt={item.imageAlt} className="aspect-[4/3]" />
             <div className="p-6">
-              <h3 className="font-display text-lg font-semibold text-grafito">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-grafito/70">{item.description}</p>
+              {item.detail === "regalos" ? (
+                <GiftKits title={item.title} description={item.description} linkLabel={item.detailLinkLabel} />
+              ) : (
+                <>
+                  <h3 className="font-display text-lg font-semibold text-grafito">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-grafito/70">{item.description}</p>
+                </>
+              )}
               <div className="mt-5">
                 <WhatsAppButton contextKey={item.contextKey} label={item.ctaLabel} variant="outline" size="md" />
               </div>
