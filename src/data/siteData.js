@@ -117,7 +117,7 @@ export const SEO = {
   // Se usa para el Open Graph `url` y `metadataBase`; mientras sea un
   // placeholder, esos campos se omiten automáticamente (ver SEO.jsx).
   siteUrl: "https://deivi.com.ar",
-  ogImage: "/images/que-hacemos/encuentros-con-experiencia.jpg", // ruta o URL de la imagen para Open Graph
+  ogImage: "/images/que-hacemos/regalos-empresariales.jpg", // ruta o URL de la imagen para Open Graph
   // El favicon real se sirve por convención de Next.js desde
   // src/app/icon.svg (placeholder de marca ya incluido ahí). Este campo
   // queda como referencia por si se reemplaza por un archivo .ico/.png.
@@ -182,7 +182,7 @@ export const WHAT_WE_DO = [
     title: "Encuentros con experiencia",
     description:
       "Catering más una dinámica a medida, como una charla y cata de café de especialidad, para lanzamientos y eventos con clientes.",
-    image: "/images/que-hacemos/encuentros-con-experiencia.jpg",
+    image: "/images/que-hacemos/encuentros-evento.jpg",
     imageAlt: "Encuentro con cata de café De.ivi",
     ctaLabel: "PEDIR PROPUESTA",
     contextKey: "eventos",
